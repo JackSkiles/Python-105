@@ -12,7 +12,11 @@ while len(groceries2) < 3:
 
 new_groceries = groceries + groceries2
 
-print(new_groceries)
+#print(new_groceries)
+indexes = range(len(new_groceries))
+for i in indexes:
+    item = new_groceries[i]
+    print(f'{i}: {item}')
 
 index_to_replace = int(input('What index would you like to replace?: '))
 
